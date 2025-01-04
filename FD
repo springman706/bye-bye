@@ -1,0 +1,246 @@
+local Gui = Instance.new("ScreenGui")
+local background = Instance.new("Frame")
+local stuff = Instance.new("Frame")
+local idtext = Instance.new("TextLabel")
+local bringpart = Instance.new("TextButton")
+local id = Instance.new("TextBox")
+local title = Instance.new("TextLabel")
+local trp = Instance.new("TextBox")
+local trptext = Instance.new("TextLabel")
+local asize = Instance.new("Frame")
+local title_2 = Instance.new("TextLabel")
+local X = Instance.new("TextBox")
+local Z = Instance.new("TextBox")
+local Xtext = Instance.new("TextLabel")
+local Ztext = Instance.new("TextLabel")
+
+--Properties:
+
+Gui.Name = "Gui"
+Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+background.Name = "background"
+background.Parent = Gui
+background.Active = true
+background.BackgroundColor3 = Color3.fromRGB(163, 163, 163)
+background.BorderColor3 = Color3.fromRGB(0, 0, 0)
+background.BorderSizePixel = 0
+background.Position = UDim2.new(0.126932472, 0, 0.309045225, 0)
+background.Size = UDim2.new(0, 362, 0, 369)
+
+stuff.Name = "stuff"
+stuff.Parent = background
+stuff.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+stuff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+stuff.BorderSizePixel = 0
+stuff.Size = UDim2.new(0, 362, 0, 52)
+
+idtext.Name = "idtext"
+idtext.Parent = stuff
+idtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+idtext.BackgroundTransparency = 1.000
+idtext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+idtext.BorderSizePixel = 0
+idtext.Position = UDim2.new(0.0607734807, 0, 1.96153843, 0)
+idtext.Size = UDim2.new(0, 60, 0, 50)
+idtext.Font = Enum.Font.SourceSans
+idtext.Text = "ID:"
+idtext.TextColor3 = Color3.fromRGB(0, 0, 0)
+idtext.TextScaled = true
+idtext.TextSize = 14.000
+idtext.TextWrapped = true
+
+bringpart.Name = "bringpart"
+bringpart.Parent = stuff
+bringpart.BackgroundColor3 = Color3.fromRGB(190, 190, 190)
+bringpart.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bringpart.BorderSizePixel = 0
+bringpart.Position = UDim2.new(0.0386740342, 0, 1.17307687, 0)
+bringpart.Size = UDim2.new(0, 186, 0, 32)
+bringpart.Font = Enum.Font.SourceSans
+bringpart.Text = "bring part"
+bringpart.TextColor3 = Color3.fromRGB(0, 0, 0)
+bringpart.TextScaled = true
+bringpart.TextSize = 14.000
+bringpart.TextWrapped = true
+
+id.Name = "id"
+id.Parent = stuff
+id.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+id.BorderColor3 = Color3.fromRGB(0, 0, 0)
+id.BorderSizePixel = 0
+id.Position = UDim2.new(0.24585636, 0, 2.11538458, 0)
+id.Size = UDim2.new(0, 257, 0, 35)
+id.ClearTextOnFocus = false
+id.Font = Enum.Font.SourceSans
+id.Text = ""
+id.TextColor3 = Color3.fromRGB(255, 255, 255)
+id.TextScaled = true
+id.TextSize = 14.000
+id.TextWrapped = true
+
+title.Name = "title"
+title.Parent = stuff
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Size = UDim2.new(0, 200, 0, 50)
+title.Font = Enum.Font.PermanentMarker
+title.Text = "Free draw"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+trp.Name = "trp"
+trp.Parent = stuff
+trp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+trp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+trp.BorderSizePixel = 0
+trp.Position = UDim2.new(0.737569034, 0, 1.17307687, 0)
+trp.Size = UDim2.new(0, 79, 0, 32)
+trp.ClearTextOnFocus = false
+trp.Font = Enum.Font.SourceSans
+trp.Text = ""
+trp.TextColor3 = Color3.fromRGB(255, 255, 255)
+trp.TextScaled = true
+trp.TextSize = 14.000
+trp.TextWrapped = true
+
+trptext.Name = "trptext"
+trptext.Parent = stuff
+trptext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+trptext.BackgroundTransparency = 1.000
+trptext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+trptext.BorderSizePixel = 0
+trptext.Position = UDim2.new(0.588397801, 0, 1.17307687, 0)
+trptext.Size = UDim2.new(0, 43, 0, 32)
+trptext.Font = Enum.Font.SourceSans
+trptext.Text = "TRP:"
+trptext.TextColor3 = Color3.fromRGB(0, 0, 0)
+trptext.TextScaled = true
+trptext.TextSize = 14.000
+trptext.TextWrapped = true
+
+asize.Name = "asize"
+asize.Parent = background
+asize.BackgroundColor3 = Color3.fromRGB(190, 190, 190)
+asize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+asize.BorderSizePixel = 0
+asize.Position = UDim2.new(0.0386740342, 0, 0.430894315, 0)
+asize.Size = UDim2.new(0, 332, 0, 196)
+
+title_2.Name = "title"
+title_2.Parent = asize
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title_2.BorderSizePixel = 0
+title_2.Position = UDim2.new(0.268072277, 0, 0.0612244904, 0)
+title_2.Size = UDim2.new(0, 153, 0, 26)
+title_2.Font = Enum.Font.SourceSans
+title_2.Text = "Size config"
+title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+title_2.TextScaled = true
+title_2.TextSize = 14.000
+title_2.TextWrapped = true
+
+X.Name = "X"
+X.Parent = asize
+X.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.280120492, 0, 0.301020414, 0)
+X.Size = UDim2.new(0, 228, 0, 34)
+X.ClearTextOnFocus = false
+X.Font = Enum.Font.SourceSans
+X.Text = ""
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+Z.Name = "Z"
+Z.Parent = asize
+Z.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Z.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Z.BorderSizePixel = 0
+Z.Position = UDim2.new(0.280120492, 0, 0.642857134, 0)
+Z.Size = UDim2.new(0, 228, 0, 34)
+Z.ClearTextOnFocus = false
+Z.Font = Enum.Font.SourceSans
+Z.Text = ""
+Z.TextColor3 = Color3.fromRGB(255, 255, 255)
+Z.TextScaled = true
+Z.TextSize = 14.000
+Z.TextWrapped = true
+
+Xtext.Name = "Xtext"
+Xtext.Parent = asize
+Xtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Xtext.BackgroundTransparency = 1.000
+Xtext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Xtext.BorderSizePixel = 0
+Xtext.Position = UDim2.new(0.0240963846, 0, 0.260204077, 0)
+Xtext.Size = UDim2.new(0, 60, 0, 50)
+Xtext.Font = Enum.Font.SourceSans
+Xtext.Text = "X:"
+Xtext.TextColor3 = Color3.fromRGB(0, 0, 0)
+Xtext.TextScaled = true
+Xtext.TextSize = 14.000
+Xtext.TextWrapped = true
+
+Ztext.Name = "Ztext"
+Ztext.Parent = asize
+Ztext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ztext.BackgroundTransparency = 1.000
+Ztext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ztext.BorderSizePixel = 0
+Ztext.Position = UDim2.new(0.0240963846, 0, 0.602040827, 0)
+Ztext.Size = UDim2.new(0, 60, 0, 50)
+Ztext.Font = Enum.Font.SourceSans
+Ztext.Text = "Z:"
+Ztext.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ztext.TextScaled = true
+Ztext.TextSize = 14.000
+Ztext.TextWrapped = true
+
+-- Scripts:
+
+local function HQUEL_fake_script() -- Gui.Guiscript 
+	local script = Instance.new('LocalScript', Gui)
+
+	local gui = script.Parent
+	local main = gui.background
+	local stuff = main.stuff
+	local size = main.asize
+	local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local part = Instance.new("Part")
+	main.Draggable = true
+	part.Anchored = true
+	part.CanCollide = false
+	part.Transparency = 1
+	part.Name = "Reference"
+	part.Parent = workspace
+	part.Size = Vector3.new(10, 0.1, 10)
+	local image = Instance.new("Decal")
+	image.Parent = part
+	image.Face = "Top"
+	image.Texture = "rbxassetid://18684098785"
+	size.X.Text = part.Size.X
+	size.Z.Text = part.Size.Z
+	stuff.id.Text = image.Texture
+	stuff.trp.Text = image.Transparency
+	stuff.bringpart.MouseButton1Click:Connect(function()
+		part.Position = Vector3.new(player.Position.X, part.Position.Y, player.Position.Z)
+		part.Orientation = Vector3.new(part.Orientation.x, player.Orientation.Y, player.Orientation.Z)
+	end)
+	while task.wait(0.5) do
+		image.Transparency = stuff.trp.Text
+		part.Size = Vector3.new(size.X.Text, 0.1, size.Z.Text)
+		image.Texture = stuff.id.Text
+	end
+end
+coroutine.wrap(HQUEL_fake_script)()
